@@ -73,9 +73,7 @@ Markdown 标题有两种格式。
 -----------------
 ```
 
-显示效果如下图：
 
-![img](E:\web\学习笔记\Markdown_notes\01986C87-7E19-4497-878E-AE996AFC088E.jpg)
 
 ### 使用 # 号标记
 
@@ -90,23 +88,17 @@ Markdown 标题有两种格式。
 ###### 六级标题
 ```
 
-显示效果如下图：
-
-![img](E:\web\学习笔记\Markdown_notes\md2.gif)
-
-
-
 
 
 # Markdown 段落
 
 Markdown 段落没有特殊的格式，直接编写文字就好，**段落的换行是使用两个以上空格加上回车**。
 
-![img](E:\web\学习笔记\Markdown_notes\36A89BDA-A062-4D66-A41B-0EBEE7891AB9.jpg)
+
 
 当然也可以在段落后面使用一个空行来表示重新开始一个段落。
 
-![img](E:\web\学习笔记\Markdown_notes\3F254936-778E-417A-BEF2-467116A55D00.jpg)
+
 
 ------
 
@@ -123,9 +115,7 @@ __粗体文本__
 ___粗斜体文本___
 ```
 
-显示效果如下所示：
 
-![img](E:\web\学习笔记\Markdown_notes\md3.gif)
 
 ------
 
@@ -145,9 +135,7 @@ ___粗斜体文本___
 ----------
 ```
 
-显示效果如下所示：
 
-![img](E:\web\学习笔记\Markdown_notes\3F46EAA9-DADE-48FD-99AA-DF7BEBFAA4FA.jpg)
 
 ------
 
@@ -161,9 +149,7 @@ GOOGLE.COM
 ~~BAIDU.COM~~
 ```
 
-显示效果如下所示：
 
-![img](E:\web\学习笔记\Markdown_notes\B5270A31-15D0-410B-AE1D-B9655B8F331C.jpg)
 
 ------
 
@@ -175,9 +161,7 @@ GOOGLE.COM
 <u>带下划线文本</u>
 ```
 
-显示效果如下所示：
 
-![img](E:\web\学习笔记\Markdown_notes\05A27273-B66D-43DE-A3DB-0D32FF024093.jpg)
 
 ------
 
@@ -199,9 +183,7 @@ Markdown 脚注的格式如下:
 [^RUNOOB]: 菜鸟教程 -- 学的不仅是技术，更是梦想！！！
 ```
 
-演示效果如下：
 
-![img](E:\web\学习笔记\Markdown_notes\md5.gif)
 
 # Markdown 区块
 
@@ -213,9 +195,7 @@ Markdown 区块引用是在段落开头使用 **>** 符号 ，然后后面紧跟
 > 学的不仅是技术更是梦想
 ```
 
-显示结果如下：
 
-![img](E:\web\学习笔记\Markdown_notes\DFE1124E-BC38-4C12-B7AC-053E560D4C9C.jpg)
 
 另外区块是可以嵌套的，一个 **>** 符号是最外层，两个 **>** 符号是第一层嵌套，以此类推退：
 
@@ -225,9 +205,7 @@ Markdown 区块引用是在段落开头使用 **>** 符号 ，然后后面紧跟
 > > > 第二层嵌套
 ```
 
-显示结果如下：
 
-![img](E:\web\学习笔记\Markdown_notes\AA0A4A6A-33A7-48C7-971F-73FFC8FE85B0.jpg)
 
 ### 区块中使用列表
 
@@ -242,9 +220,7 @@ Markdown 区块引用是在段落开头使用 **>** 符号 ，然后后面紧跟
 > + 第三项
 ```
 
-显示结果如下：
 
-![img](E:\web\学习笔记\Markdown_notes\E3BF6399-6483-4C7A-8502-AE75E8D66C96.jpg)
 
 ### 列表中使用区块
 
@@ -259,9 +235,7 @@ Markdown 区块引用是在段落开头使用 **>** 符号 ，然后后面紧跟
 * 第二项
 ```
 
-显示结果如下：
 
-![img](E:\web\学习笔记\Markdown_notes\1B894FB4-53AC-4E2D-BA30-F4AE4DFA8B97.jpg)
 
 # Markdown 代码
 
@@ -337,9 +311,7 @@ Markdown 图片语法格式如下：
 ![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png "RUNOOB")
 ```
 
-显示结果如下：
 
-![img](E:\web\学习笔记\Markdown_notes\readme.assets\A042DF30-C232-46F3-8436-7D6C35351BBD.jpg)
 
 当然，你也可以像网址那样对图片网址使用变量:
 
@@ -350,9 +322,7 @@ Markdown 图片语法格式如下：
 [1]: http://static.runoob.com/images/runoob-logo.png
 ```
 
-显示结果如下：
 
-![img](E:\web\学习笔记\Markdown_notes\readme.assets\A5338948-D225-46F6-9C3C-70C975A78764.jpg)
 
 Markdown 还没有办法指定图片的高度与宽度，如果你需要的话，你可以使用普通的 <img> 标签。
 
@@ -360,9 +330,7 @@ Markdown 还没有办法指定图片的高度与宽度，如果你需要的话�
 <img src="http://static.runoob.com/images/runoob-logo.png" width="50%">
 ```
 
-显示结果如下：
 
-![img](E:\web\学习笔记\Markdown_notes\readme.assets\55F2A67D-F4BD-4960-AC55-DC690A415878.jpg)
 
 # Markdown 表格
 
