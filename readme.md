@@ -49,9 +49,19 @@
 
 
 
-# 标题
+# 兼容性
 
-### 使用 = 和 - 标记一级和二级标题
+## hexo博客兼容性问题
+
+1. 代码语言小写 HTML=html
+2. 代码语言简写 MySQL=SQL
+3. 代码块标记前不能有空格
+
+# Markdown 标题
+
+Markdown 标题有两种格式。
+
+### 1、使用 = 和 - 标记一级和二级标题
 
 = 和 - 标记语法格式如下：
 
@@ -62,6 +72,10 @@
 我展示的是二级标题
 -----------------
 ```
+
+显示效果如下图：
+
+![img](E:\web\学习笔记\Markdown_notes\01986C87-7E19-4497-878E-AE996AFC088E.jpg)
 
 ### 使用 # 号标记
 
@@ -76,9 +90,25 @@
 ###### 六级标题
 ```
 
+显示效果如下图：
+
+![img](E:\web\学习笔记\Markdown_notes\md2.gif)
+
+
+
+
+
 # Markdown 段落
 
 Markdown 段落没有特殊的格式，直接编写文字就好，**段落的换行是使用两个以上空格加上回车**。
+
+![img](E:\web\学习笔记\Markdown_notes\36A89BDA-A062-4D66-A41B-0EBEE7891AB9.jpg)
+
+当然也可以在段落后面使用一个空行来表示重新开始一个段落。
+
+![img](E:\web\学习笔记\Markdown_notes\3F254936-778E-417A-BEF2-467116A55D00.jpg)
+
+------
 
 ## 字体
 
@@ -93,17 +123,33 @@ __粗体文本__
 ___粗斜体文本___
 ```
 
+显示效果如下所示：
+
+![img](E:\web\学习笔记\Markdown_notes\md3.gif)
+
+------
+
 ## 分隔线
 
 你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：
 
 ```
 ***
+
 * * *
+
 *****
+
 - - -
+
 ----------
 ```
+
+显示效果如下所示：
+
+![img](E:\web\学习笔记\Markdown_notes\3F46EAA9-DADE-48FD-99AA-DF7BEBFAA4FA.jpg)
+
+------
 
 ## 删除线
 
@@ -115,6 +161,12 @@ GOOGLE.COM
 ~~BAIDU.COM~~
 ```
 
+显示效果如下所示：
+
+![img](E:\web\学习笔记\Markdown_notes\B5270A31-15D0-410B-AE1D-B9655B8F331C.jpg)
+
+------
+
 ## 下划线
 
 下划线可以通过 HTML 的 **** 标签来实现：
@@ -122,6 +174,12 @@ GOOGLE.COM
 ```
 <u>带下划线文本</u>
 ```
+
+显示效果如下所示：
+
+![img](E:\web\学习笔记\Markdown_notes\05A27273-B66D-43DE-A3DB-0D32FF024093.jpg)
+
+------
 
 ## 脚注
 
@@ -141,18 +199,23 @@ Markdown 脚注的格式如下:
 [^RUNOOB]: 菜鸟教程 -- 学的不仅是技术，更是梦想！！！
 ```
 
-### 列表嵌套
+演示效果如下：
 
-列表嵌套只需在子列表中的选项添加四个空格即可：
+![img](E:\web\学习笔记\Markdown_notes\md5.gif)
+
+# Markdown 区块
+
+Markdown 区块引用是在段落开头使用 **>** 符号 ，然后后面紧跟一个**空格**符号：
 
 ```
-1. 第一项：
-    - 第一项嵌套的第一个元素
-    - 第一项嵌套的第二个元素
-2. 第二项：
-    - 第二项嵌套的第一个元素
-    - 第二项嵌套的第二个元素
+> 区块引用
+> 菜鸟教程
+> 学的不仅是技术更是梦想
 ```
+
+显示结果如下：
+
+![img](E:\web\学习笔记\Markdown_notes\DFE1124E-BC38-4C12-B7AC-053E560D4C9C.jpg)
 
 另外区块是可以嵌套的，一个 **>** 符号是最外层，两个 **>** 符号是第一层嵌套，以此类推退：
 
@@ -162,31 +225,43 @@ Markdown 脚注的格式如下:
 > > > 第二层嵌套
 ```
 
-## 脚注
+显示结果如下：
 
-脚注是对文本的补充说明。
+![img](E:\web\学习笔记\Markdown_notes\AA0A4A6A-33A7-48C7-971F-73FFC8FE85B0.jpg)
 
-Markdown 脚注的格式如下:
+### 区块中使用列表
 
-```
-[^要注明的文本]
-```
-
-以下实例演示了脚注的用法：
+区块中使用列表实例如下：
 
 ```
-创建脚注格式类似这样 [^RUNOOB]。
-
-[^RUNOOB]: 菜鸟教程 -- 学的不仅是技术，更是梦想！！！
+> 区块中使用列表
+> 1. 第一项
+> 2. 第二项
+> + 第一项
+> + 第二项
+> + 第三项
 ```
 
-## 下划线
+显示结果如下：
 
-下划线可以通过 HTML 的 **** 标签来实现：
+![img](E:\web\学习笔记\Markdown_notes\E3BF6399-6483-4C7A-8502-AE75E8D66C96.jpg)
+
+### 列表中使用区块
+
+如果要在列表项目内放进区块，那么就需要在 **>** 前添加四个空格的缩进。
+
+区块中使用列表实例如下：
 
 ```
-<u>带下划线文本</u>
+* 第一项
+    > 菜鸟教程
+    > 学的不仅是技术更是梦想
+* 第二项
 ```
+
+显示结果如下：
+
+![img](E:\web\学习笔记\Markdown_notes\1B894FB4-53AC-4E2D-BA30-F4AE4DFA8B97.jpg)
 
 # Markdown 代码
 
@@ -250,6 +325,45 @@ Markdown 图片语法格式如下：
 ![alt 属性文本](图片地址 "可选标题")
 ```
 
+- 开头一个感叹号 !
+- 接着一个方括号，里面放上图片的替代文字
+- 接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 'title' 属性的文字。
+
+使用实例：
+
+```
+![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png)
+
+![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png "RUNOOB")
+```
+
+显示结果如下：
+
+![img](E:\web\学习笔记\Markdown_notes\readme.assets\A042DF30-C232-46F3-8436-7D6C35351BBD.jpg)
+
+当然，你也可以像网址那样对图片网址使用变量:
+
+```
+这个链接用 1 作为网址变量 [RUNOOB][1].
+然后在文档的结尾位变量赋值（网址）
+
+[1]: http://static.runoob.com/images/runoob-logo.png
+```
+
+显示结果如下：
+
+![img](E:\web\学习笔记\Markdown_notes\readme.assets\A5338948-D225-46F6-9C3C-70C975A78764.jpg)
+
+Markdown 还没有办法指定图片的高度与宽度，如果你需要的话，你可以使用普通的 <img> 标签。
+
+```
+<img src="http://static.runoob.com/images/runoob-logo.png" width="50%">
+```
+
+显示结果如下：
+
+![img](E:\web\学习笔记\Markdown_notes\readme.assets\55F2A67D-F4BD-4960-AC55-DC690A415878.jpg)
+
 # Markdown 表格
 
 Markdown 制作表格使用 **|** 来分隔不同的单元格，使用 **-** 来分隔表头和其他行。
@@ -275,6 +389,10 @@ Markdown 制作表格使用 **|** 来分隔不同的单元格，使用 **-** 来
 使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑
 ```
 
+输出结果为：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/81999271-F914-428D-B7BF-164BDC67CAAC.jpg)
+
 ### 转义
 
 Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠转义特殊字符：
@@ -283,6 +401,10 @@ Markdown 使用了很多特殊符号来表示特定的意义，如果需要显�
 **文本加粗** 
 \*\* 正常显示星号 \*\*
 ```
+
+输出结果为：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/CA0E0162-0C48-41CD-B57A-CB32A4287C02.jpg)
 
 Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：
 
@@ -316,7 +438,9 @@ $$tep1}{\style{visibility:hidden}{(x+1)(x+1)}}
 $$
 ```
 
+输出结果为：
 
+![img](https://www.runoob.com/wp-content/uploads/2019/03/1311AD24-5804-4302-82D3-973D177E58CF.jpg)
 
 以下几个实例效果图如下：
 
