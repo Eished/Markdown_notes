@@ -1090,6 +1090,92 @@ $\stackrel{a}{\longrightarrow}$
 $0\stackrel{a}{\longrightarrow}1$
 ```
 
+
+
+#### 更多箭头符号
+
+latex	显示效果
+
+```latex
+\uparrow	↑
+\downarrow	↓
+\Uparrow	⇑
+\Downarrow	⇓
+\updownarrow	↕
+\Updownarrow	⇕
+\rightarrow	→
+\leftarrow	←
+\Rightarrow	⇒
+\Leftarrow	⇐
+\leftrightarrow	↔
+\Leftrightarrow	⇔
+\longrightarrow	⟶
+\longleftarrow	⟵
+\Longrightarrow	⟹
+\Longleftarrow	⟸
+\longleftrightarrow	⟷
+\Longleftrightarrow	⟺
+
+latex	显示效果
+\mapsto	↦
+\longmapsto	⟼
+\hookleftarrow	↩
+\hookrightarrow	↪
+\leftharpoonup	↼
+\rightharpoonup	⇀
+\leftharpoondown	↽
+\rightharpoondown	⇁
+\rightleftharpoons	⇌
+\leadsto	⇝
+\nearrow	↗
+\searrow	↘
+\swarrow	↙
+\nwarrow	↖
+\nleftarrow	↚
+\nrightarrow	↛
+\nLeftarrow	⇍
+\nRightarrow	⇏
+\nleftrightarrow	↮
+\nLeftrightarrow	⇎
+\dashrightarrow	⇢
+\dashleftarrow	⇠
+\leftleftarrows	⇇
+\leftrightarrows	⇆
+\Lleftarrow	⇚
+\twoheadleftarrow	↞
+\leftarrowtail	↢
+\looparrowleft	↫
+\leftrightharpoons	⇋
+\curvearrowleft	↶
+\circlearrowleft	↺
+\Lsh	↰
+\upuparrows	⇈
+\upharpoonleft	↿
+\downharpoonleft	⇃
+\multimap	⊸
+\leftrightsquigarrow	↭
+\rightrightarrows	⇉
+\rightleftarrows	⇄
+\rightrightarrows	⇉
+\rightleftarrows	⇄
+\twoheadrightarrow	↠
+\rightarrowtail	↣
+\looparrowright	↬
+\rightleftharpoons	⇌
+\curvearrowright	↷
+\circlearrowright	↻
+\Rsh	↱
+\downdownarrows	⇊
+\upharpoonright	↾
+\downharpoonright	⇂
+\rightsquigarrow	⇝
+```
+
+
+
+------------------------------------------------
+
+
 ### 省略号
 
 #### 低端对齐
