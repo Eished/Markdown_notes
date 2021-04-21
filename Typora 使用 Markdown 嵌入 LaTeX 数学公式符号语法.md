@@ -352,6 +352,7 @@ $\sum_{k_0,k_1,\ldots>0 \atop k_0+k_1+\cdots=n}A_{k_0}A_{k_1}\cdots$
 
 方法一：
 
+```latex
 $$ f(x)=\left\{
 \begin{aligned}
 x & = & \cos(t) \\
@@ -359,8 +360,10 @@ y & = & \sin(t) \\
 z & = & \frac xy
 \end{aligned}
 \right.
-$$
+```
 
+
+$$
 ```latex
 $$ f(x)=\left\{
 \begin{aligned}
@@ -370,8 +373,6 @@ z & = & \frac xy
 \end{aligned}
 \right.
 $$
-```
-
 
 
 方法二：
@@ -393,8 +394,6 @@ F^*_R  &   & {S_M \leq 0 < S_R}\\
 F_R   &   & {S_R \leq 0}
 \end{array} \right. 
 ```
-
-
 
 方法三:
 
