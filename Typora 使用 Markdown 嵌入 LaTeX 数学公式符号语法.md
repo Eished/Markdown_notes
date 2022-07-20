@@ -28,6 +28,17 @@ E&=&(a+b)(a-b)+b^2  \nonumber
 \end{align*}
 ```
 
+$$
+\begin{align*}\label{2}
+  & X(0) = x(0)W_{N}^{0\cdot0} + x(1)W_{N}^{0\cdot1} + \cdots + x(N-1)W_{N}^{0\cdot(N-1)}\\
+  & X(1) = x(0)W_{N}^{1\cdot0} + x(1)W_{N}^{1\cdot1} + \cdots + x(N-1)W_{N}^{1\cdot(N-1)} \\
+  & \cdots \\
+  & X(N-1) = x(0)W_{N}^{(N-1)\cdot0} + x(1)W_{N}^{(N-1)\cdot1} + \cdots + x(N-1)W_{N}^{(N-1)\cdot(N-1)} \\
+\end{align*}
+$$
+
+
+
 说明1：&符号就是"**对齐的位置**"，放置在最左边就是多行公式左对齐；
 说明2：\符号是每一行公式结束后的换行。
 
@@ -353,7 +364,7 @@ $\sum_{k_0,k_1,\ldots>0 \atop k_0+k_1+\cdots=n}A_{k_0}A_{k_1}\cdots$
 方法一：
 
 ```latex
-$$ f(x)=\left\{
+f(x)=\left\{
 \begin{aligned}
 x & = & \cos(t) \\
 y & = & \sin(t) \\
@@ -364,8 +375,7 @@ z & = & \frac xy
 
 
 $$
-```latex
-$$ f(x)=\left\{
+f(x)=\left\{
 \begin{aligned}
 x & = & \cos(t) \\
 y & = & \sin(t) \\
@@ -615,6 +625,9 @@ $\lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$
 $\displaystyle \lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$
 ```
 
+$\lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$
+$\displaystyle \lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$
+
 ### 求和
 
 ```latex
@@ -628,6 +641,9 @@ $\displaystyle \lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$
 $\sum^{x \to -\infty}_{y \to 0}{\frac{x}{y}}$
 $\displaystyle \sum^{x \to -\infty}_{y \to 0}{\frac{x}{y}}$
 ```
+
+$\sum^{x \to -\infty}_{y \to 0}{\frac{x}{y}}$
+$\displaystyle \sum^{x \to -\infty}_{y \to 0}{\frac{x}{y}}$
 
 ### 积分
 
@@ -643,6 +659,9 @@ $\int^{\infty}_{0}{xdx}$
 $\displaystyle \int^{\infty}_{0}{xdx}$
 ```
 
+$\int^{\infty}_{0}{xdx}$
+$\displaystyle \int^{\infty}_{0}{xdx}$
+
 ### 微分
 
 ```latex
@@ -652,10 +671,15 @@ $\displaystyle \int^{\infty}_{0}{xdx}$
 
 ![img](https://img2018.cnblogs.com/blog/1410667/201909/1410667-20190901140815920-119886306.png)
 
+
+
 ```latex
 $\frac{\partial x}{\partial y}$
 $\displaystyle \frac{\partial x}{\partial y}$
 ```
+
+$\frac{\partial x}{\partial y}$
+$\displaystyle \frac{\partial x}{\partial y}$
 
 ### 矩阵
 
@@ -670,6 +694,10 @@ $\displaystyle \frac{\partial x}{\partial y}$
 ```latex
 $$\left[ \begin{matrix} 1 & 2  & \cdots & 5 & 6 & \cdots & 9 & 10 \\ \vdots & \vdots & \cdots & \vdots & \vdots & \cdots & \cdots & \ddots \\ a & b & \cdots & e & f & \cdots & i & j \end{matrix} \right]$$
 ```
+
+
+
+$$\left[ \begin{matrix} 1 & 2  & \cdots & 5 & 6 & \cdots & 9 & 10 \\ \vdots & \vdots & \cdots & \vdots & \vdots & \cdots & \cdots & \ddots \\ a & b & \cdots & e & f & \cdots & i & j \end{matrix} \right]$$
 
 ## 逻辑运算
 
@@ -777,6 +805,9 @@ $x \not\leq y$
 $\frac{1}{3} \approx 0.3$
 $\displaystyle \frac{1}{3} \approx 0.3$
 ```
+
+$\frac{1}{3} \approx 0.3$
+$\displaystyle \frac{1}{3} \approx 0.3$
 
 ### 恒等于
 
@@ -991,9 +1022,13 @@ $A \bigotimes B$
 $\vec{AC} = \vec{AB} + \vec{BC}$
 ```
 
+$\vec{AC} = \vec{AB} + \vec{BC}$
+
 ### 导数
 
 #### 一阶导数
+
+$$\dot{a}$$
 
 ```latex
 \dot{a}
@@ -1002,6 +1037,8 @@ $\vec{AC} = \vec{AB} + \vec{BC}$
 ![img](https://img2018.cnblogs.com/blog/1410667/201909/1410667-20190901142759854-515137057.png)
 
 #### 二阶导数
+
+$$\ddot{a}$$
 
 ```latex
 \ddot{a}
@@ -1292,3 +1329,45 @@ $\mathring{x}$
 > - 推荐网站：[Online LaTeX Equation Editor](http://latex.codecogs.com/eqneditor/editor.php)
 
 分类: [Markdown_LaTeX](https://www.cnblogs.com/muyisir/category/1538277.html)
+
+
+$$
+f(x)=\left\{
+\begin{aligned}
+x & = & \cos(t) \\
+y & = & \sin(t) \\
+z & = & \frac xy
+\end{aligned}
+\right.
+$$
+
+$$
+\displaystyle \lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}
+$$
+
+$$
+\vec{x}\stackrel{\mathrm{def}}{=}{x_1,\dots,x_n}
+$$
+
+$$
+\left[ \begin{matrix} 1 & 2  & \cdots & 5 & 6 & \cdots & 9 & 10 \\ \vdots & \vdots & \cdots & \vdots & \vdots & \cdots & \cdots & \ddots \\ a & b & \cdots & e & f & \cdots & i & j \end{matrix} \right]
+$$
+
+$$
+{n+1 \choose k}={n \choose k}+{n \choose k-1}
+$$
+
+$$
+\sum_{k_0,k_1,\ldots>0 \atop k_0+k_1+\cdots=n}A_{k_0}A_{k_1}\cdots
+$$
+
+$$
+\begin{align*}\label{3}
+  & X(0) = x(0)W_{N}^{0\cdot0} + x(1)W_{N}^{0\cdot1} + \cdots + x(N-1)W_{N}^{0\cdot(N-1)}\\
+  & X(1) = x(0)W_{N}^{1\cdot0} + x(1)W_{N}^{1\cdot1} + \cdots + x(N-1)W_{N}^{1\cdot(N-1)} \\
+  & \cdots \\
+  & X(N-1) = x(0)W_{N}^{(N-1)\cdot0} + x(1)W_{N}^{(N-1)\cdot1} + \cdots + x(N-1)W_{N}^{(N-1)\cdot(N-1)} \\
+\end{align*}
+$$
+
+![image-20220712023622291](Typora 使用 Markdown 嵌入 LaTeX 数学公式符号语法.assets/image-20220712023622291.png)

@@ -15,7 +15,7 @@
 - 选中相同格式的文字：ctrl+e
 - 跳转到文章开头：ctrl+home
 - 跳转到文章结尾：ctrl+end
-  搜索：ctrl+f
+- 搜索：ctrl+f
 - 替换：ctrl+h
 - 引用：输入>之后输入空格
 - 代码块：ctrl+alt+f
@@ -141,7 +141,7 @@ ___粗斜体文本___
 
 ## 删除线
 
-如果段落上的文字要添加删除线，只需要在文字的两端加上两个波浪线 **~~** 即可，实例如下：
+如果段落上的文字要添加删除线，只需要在文字的两端加上两个波浪线 **~~删除线~~** 即可，实例如下：
 
 ```
 RUNOOB.COM
@@ -155,7 +155,7 @@ GOOGLE.COM
 
 ## 下划线
 
-下划线可以通过 HTML 的 **** 标签来实现：
+下划线可以通过 HTML 的 `<u>` 标签来实现：
 
 ```
 <u>带下划线文本</u>
@@ -426,13 +426,17 @@ $$
 
 ![img](https://www.runoob.com/wp-content/uploads/2019/03/1311AD24-5804-4302-82D3-973D177E58CF.jpg)
 
-# 流程图
+# UML
+
+
+
+## 流程图
 
 以下几个实例效果图如下：
 
 **1、横向流程图源码格式：**
 
-```
+````
 ```mermaid
 graph LR
 A[方形] -->B(圆角)
@@ -440,8 +444,8 @@ A[方形] -->B(圆角)
     C -->|a=1| D[结果1]
     C -->|a=2| E[结果2]
     F[横向流程图]
-​```
 ```
+````
 
 ```mermaid
 graph LR
@@ -530,7 +534,7 @@ cond(yes)->io(bottom)->e
 cond(no)->sub1(right)->op
 ```
 
-**5、UML时序图源码样例：**
+## **时序图**
 
 ```
 ```sequence
@@ -616,7 +620,7 @@ Note right of C: 没人陪我玩
     李四-->王五: 很好!
 ```
 
-**8、甘特图样例：**
+## 甘特图
 
 ```
 ```mermaid
@@ -663,6 +667,59 @@ Note right of C: 没人陪我玩
         压力测试                               :after a1  , 20h
         测试报告                               : 48h
 ```
+
+## 类图
+
+```mermaid
+classDiagram
+      Animal <|-- Duck
+      Animal <|-- Fish
+      Animal <|-- Zebra
+      Animal : +int age
+      Animal : +String gender
+      Animal: +isMammal()
+      Animal: +mate()
+      class Duck{
+          +String beakColor
+          +swim()
+          +quack()
+      }
+      class Fish{
+          -int sizeInFeet
+          -canEat()
+      }
+      class Zebra{
+          +bool is_wild
+          +run()
+      }
+```
+
+
+
+## 状态图
+
+```mermaid
+stateDiagram
+    [*] --> Still
+    Still --> [*]
+
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
+```
+
+## 饼状图
+
+```mermaid
+pie
+    title Pie Chart
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 150 
+```
+
+
 
 # MarkDown 锚点
 
