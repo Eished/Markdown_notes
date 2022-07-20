@@ -709,6 +709,112 @@ stateDiagram
     Crash --> [*]
 ```
 
+## E-R图
+
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+```
+
+
+
+
+
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    CUSTOMER {
+        string name
+        string custNumber
+        string sector
+    }
+    ORDER ||--|{ LINE-ITEM : contains
+    ORDER {
+        int orderNumber
+        string deliveryAddress
+    }
+    LINE-ITEM {
+        string productCode
+        int quantity
+        float pricePerUnit
+    }
+```
+
+### 2.1 基本语法
+
+```
+<first-entity> [<relationship> <second-entity> : <relationship-label>]
+```
+
+- first-entity 是实体的名称.名称必须以字母字符开头，也可能包含数字、连字符和下划线.
+- relationship 描述了两个实体相互关联的方式.请参阅下文.
+- second-entity 是另一个实体的名称.
+- relationship-label 从第一个实体的角度描述关系.
+
+```
+PROPERTY ||--|{ ROOM : contains
+```
+
+-  此语句可以理解为属性包含一个或多个房间，并且一个房间是一个和唯一一个属性的一部分。你可以从第一个实体的角度看到此处的标签：属性包含一个房间，但一个房间不包含属性。从第二个实体的角度考虑时，等效标签通常很容易推断。（某些 ER 图从两个角度标记关系，但此处不支持此关系，并且通常是多余的）。
+
+ 只有声明的第一实体部分是强制性的。这使得显示一个没有关系的实体成为可能，这在图表的迭期构造中是有用的。如果指定了语句的任何其他部分，则所有部分都是强制性的。
+
+### 2.2 乌鸦足语法
+
+每个语句的关系部分可以细分为三个子组件：
+
+- 第一个实体与第二个实体的Cardinality，
+- 关系是否赋予“孩子”实体身份
+- 关于第一个实体的第二个实体的Cardinality
+
+Cardinality是描述另一个实体中有多少元素可以与相关实体相关的属性。在上述示例中，属性可以关联一个或多个 ROOM 实例，而 ROOM 只能与一个属性关联。在每个基数标记中有两个字符。最外层字符表示最大值，最内层字符表示最小值。
+
+乌鸦足表明了实体和实体之间N对N的关系.一共有四种，如下表所示：
+
+| 左值 |右值 |含义 |
+| --- | --- | --- |
+| \|o | o\|	| 0 或 1|
+| \|\| |	\|\| |	1 |
+| }o | o{ | 0 或 多（无上限） |
+| }\|	| \|{ | 1 或 多（无上限） |
+
+- 关系可以分为识别或非识别，这些关系分别以实心线或虚线呈现。
+- 当其中一个实体没有另一个实体不能独立存在时，这是相关的。
+  - 例如，为人们驾驶汽车提供保险的公司可能需要将数据存储在NAMED-DIRVER上。在建模时，我们可能首先注意到，CAR可以由许多PERSON实例驱动，而一个PERSON可以驱动许多CAR - 这两个实体都可以在没有其他实体的情况下存在，因此，我们可以在mermaid中指定为：PERSON {|..|{CAR："driver"。
+  - 请注意，关系中间的两个点将导致两个实体之间划出虚线。
+  - 但是，当这种多对多的关系被解决成两个一对多的关系时，我们观察到，没有一个PERSON和一辆CAR，一个NAMED-DRIVER就不可能存在——这种关系变得识别，并将使用连字符进行指定，这转化为一条坚实的线：
+
+```
+CAR ||--o{ NAMED-DRIVER : allows
+PERSON ||--o{ NAMED-DRIVER : is
+```
+
+### 2.3 属性语法
+
+> 需要注意的是，经过小白尝试发现，typora不支持添加属性的ER图语法，即属性语法在typora的mermaid版本中暂（2021.2.24)不成立.
+
+属性可以通过指定实体名称，然后指定包含多个类型名称对的块来定义实体，其中一个块由一对花括号定义。例如：
+
+```mermaid
+erDiagram
+    CAR ||--o{ NAMED-DRIVER : allows
+    CAR {
+        string registrationNumber
+        string make
+        string model
+    }
+    PERSON ||--o{ NAMED-DRIVER : is
+    PERSON {
+        string firstName
+        string lastName
+        int age
+    }
+```
+
+
+
 ## 饼状图
 
 ```mermaid
