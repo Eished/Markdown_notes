@@ -1296,6 +1296,8 @@ $\tilde{a}$
 $\mathring{x}$
 ```
 
+$\mathring{x}$
+
 ## 希腊字母
 
 | 大写字母 |    效果    |    实现    | 小写字母 |    效果    |    实现    |
@@ -1370,4 +1372,3 @@ $$
 \end{align*}
 $$
 
-![image-20220712023622291](Typora 使用 Markdown 嵌入 LaTeX 数学公式符号语法.assets/image-20220712023622291.png)
