@@ -737,6 +737,166 @@ classDiagram
       }
 ```
 
+### 定义类成员
+
+UML提供了表示类成员的机制，例如属性和方法，以及有关它们的其他信息。
+
+Mermaid根据**括号** `()`是否存在来区分属性和函数/方法。与一起`()`被视为函数/方法，而其他被视为属性。
+
+有两种定义类成员的方法，无论使用哪种语法定义成员，输出都将相同。两种不同的方式是：
+
+- 使用**:**（冒号）后跟成员名称来关联一个类的成员，这对于一次定义一个成员非常有用。例如：
+
+```mermaid
+classDiagram
+    class BankAccount
+    BankAccount : +String owner
+    BankAccount : +BigDecimal balance
+    BankAccount : +deposit(amount)
+    BankAccount : +withdrawal(amount)
+```
+
+
+
+### 返回类型
+
+（可选）您可以使用将要返回的数据类型结束方法/函数定义（注意：方法定义的末尾和返回类型示例之间必须有一个空格）
+
+```mermaid
+classDiagram
+    class BankAccount{
+        +String owner
+        +BigDecimal balance
+        +deposit(amount) bool
+        +withdrawl(amount) int
+    }
+```
+
+
+
+### 泛型
+
+`List<int>`通过将类型包含在`~`（**tilde**）中，可以使用通用类型（例如）针对字段，参数和返回类型定义成员。注意：目前不支持**嵌套**类型声明（例如`List<List<int>>`）
+
+```mermaid
+classDiagram
+	class Square~Shape~{
+        int id
+        List~int~ position
+        setPoints(List~int~ points)
+        getPoints() List~int~
+    }
+
+    Square : -List~string~ messages
+    Square : +setMessages(List~string~ messages)
+    Square : +getMessages() List~string~
+```
+
+
+
+### 可见性
+
+要指定类成员(即任何属性或方法)的可见性，这些符号可以放在成员名之前，但它是可选的:
+
+| 可见性                         | Java               | UML  |
+| :----------------------------- | :----------------- | :--- |
+| 对所有类可见(公共的)           | public             | `+`  |
+| 仅对本类可见(私有的)           | private            | `-`  |
+| 对本包和所有子类可见(受保护的) | protected          | `#`  |
+| 对本包可见(包内部)             | 默认，不需要修饰符 | `_`  |
+
+
+
+### 定义关系
+
+|        | 描述          | 描述     | 说明                                                         |
+| :----- | :------------ | :------- | :----------------------------------------------------------- |
+| `<|--` | Inheritance   | 继承     | 一般而言，如果类A扩展类B,类A不但包含从类B继承的方法，还会拥有一些额外的功能。 |
+| `*--`  | Composition   | 组合     |                                                              |
+| `o--`  | Aggregation   | 聚合     | 聚合关系意味着类A 的对象包含类B 的对象。                     |
+| `-->`  | Association   | 单向关联 |                                                              |
+| `--`   | Link (Solid)  | 双向关联 |                                                              |
+| `..>`  | Dependency    | 依赖     | 如果一个类的方法操纵另一个类的对象， 我们就说一个类依赖于另一个类。 |
+| `..|>` | Realization   | 实现     |                                                              |
+| `..`   | Link (Dashed) |          |                                                              |
+
+```
+classDiagram
+    classA --|> classB : 继承
+    classC --* classD : 组合
+    classE --o classF : 聚合
+    classG --> classH : 单向关联
+    classI -- classJ : 双向关联
+    classK ..> classL : 依赖
+    classM ..|> classN : 接口实现
+    classO .. classP : Link(Dashed)
+```
+
+```mermaid
+classDiagram
+    classA --|> classB : 继承
+    classC --* classD : 组合
+    classE --o classF : 聚合
+    classG --> classH : 单向关联
+    classI -- classJ : 双向关联
+    classK ..> classL : 依赖
+    classM ..|> classN : 接口实现
+    classO .. classP : Link(Dashed)
+```
+
+
+
+### 多重关系
+
+类图中的多样性或基数表示一个类与另一个类的一个实例相链接的实例的数量。例如，一个公司将有一个或多个雇员，但是每个雇员只为一个公司工作。
+
+多重符号被放置在关联的末尾附近。
+
+不同的基数选项是:
+
+- `1` 只有1个
+- `0..1` 零或一
+- `1..*` 一个或多个
+- `*` 许多
+- `n` n {其中n> 1}
+- `0..n` 0至n {其中n> 1}
+- `1..n` 1至n{其中n> 1}
+
+```mermaid
+classDiagram
+    Customer "1" --> "*" Ticket
+    Student "1" --> "1..*" Course
+    Galaxy --> "many" Star : Contains
+```
+
+
+
+### 注释
+
+可以用一个特定的标记文本来注释类，这个标记文本就像类的元数据，可以清楚地说明类的性质。一些常见的注释示例可能是:
+
+- `<<Interface>>` 代表一个接口
+- `<<abstract>>` 代表一个抽象类
+- `<<Service>>` 代表一个服务类
+- `<<enumeration>>` 代表一个枚举
+
+```mermaid
+classDiagram
+class Shape{
+    <<interface>>
+    noOfVertices
+    draw()
+}
+class Color{
+    <<enumeration>>
+    RED
+    BLUE
+    GREEN
+    WHITE
+    BLACK
+}
+```
+
 
 
 ## 状态图
