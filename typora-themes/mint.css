@@ -170,34 +170,37 @@ h1 {
 
 h2 {
   font-size: 1.8em;
+  line-height: 110%;
   margin-top: 0.83em;
   margin-bottom: 0.83em;
 }
 
 h3 {
   font-size: 1.5em;
+  line-height: 110%;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
 h4 {
   font-size: 1.2em;
-  margin-top: 1.33em;
-  margin-bottom: 1.33em;
+  line-height: 110%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 h5 {
   font-size: 1em;
-  margin-top: 1.33em;
-  margin-bottom: 1.33em;
-  color: #777777;
+  line-height: 110%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 h6 {
   font-size: 1em;
-  margin-top: 1.33em;
-  margin-bottom: 1.33em;
-  color: #adadad;
+  line-height: 110%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 p,

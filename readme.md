@@ -1,4 +1,4 @@
-> [Typora 使用 Markdown 嵌入 LaTeX 数学公式符号语法](./Typora 使用 Markdown 嵌入 LaTeX 数学公式符号语法.md)
+> [Typora 使用 Markdown 嵌入 LaTeX 数学公式符号语法](./Typora_使用_Markdown_嵌入_LaTeX_数学公式符号语法.md)
 >
 > [VScode 笔记](./VScode_笔记.md)
 >
@@ -754,6 +754,9 @@ classDiagram
     BankAccount : +BigDecimal balance
     BankAccount : +deposit(amount)
     BankAccount : +withdrawal(amount)
+    class Human {
+    	+varchar name
+    }
 ```
 
 
