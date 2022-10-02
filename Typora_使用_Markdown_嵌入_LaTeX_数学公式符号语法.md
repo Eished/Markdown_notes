@@ -14,7 +14,6 @@ E&=&(a+b)(a-b)+b^2  \nonumber
 \end{eqnarray}
 ```
 
-
 以上公式中， “&=&”代表在“=”处对齐， “nonumber”代表此行不参与自动编号，“”表示换行。“～”输入或不输入对结果没有影响。效果如下
 
 有时候公式太长，用=号对齐很难看(有的公式**左边很长，右边很短**)，此时难免需要进行"**公式左对齐**"。所需要的环境还是"**align**"(或者是align*，不带公式编号)。
@@ -36,8 +35,6 @@ $$
   & X(N-1) = x(0)W_{N}^{(N-1)\cdot0} + x(1)W_{N}^{(N-1)\cdot1} + \cdots + x(N-1)W_{N}^{(N-1)\cdot(N-1)} \\
 \end{align*}
 $$
-
-
 
 说明1：&符号就是"**对齐的位置**"，放置在最左边就是多行公式左对齐；
 说明2：\符号是每一行公式结束后的换行。
@@ -356,10 +353,7 @@ ${n+1 \choose k}={n \choose k}+{n \choose k-1}$
 $\sum_{k_0,k_1,\ldots>0 \atop k_0+k_1+\cdots=n}A_{k_0}A_{k_1}\cdots$
 ```
 
-
-
 ### 左大括号 联立公式
-
 
 方法一：
 
@@ -373,7 +367,6 @@ z & = & \frac xy
 \right.
 ```
 
-
 $$
 f(x)=\left\{
 \begin{aligned}
@@ -383,7 +376,6 @@ z & = & \frac xy
 \end{aligned}
 \right.
 $$
-
 
 方法二：
 
@@ -420,8 +412,6 @@ f(x)=
 1& \text{x!=0}
 \end{cases}
 ```
-
-
 
 ------
 
@@ -671,8 +661,6 @@ $\displaystyle \int^{\infty}_{0}{xdx}$
 
 ![img](https://img2018.cnblogs.com/blog/1410667/201909/1410667-20190901140815920-119886306.png)
 
-
-
 ```latex
 $\frac{\partial x}{\partial y}$
 $\displaystyle \frac{\partial x}{\partial y}$
@@ -694,8 +682,6 @@ $\displaystyle \frac{\partial x}{\partial y}$
 ```latex
 $$\left[ \begin{matrix} 1 & 2  & \cdots & 5 & 6 & \cdots & 9 & 10 \\ \vdots & \vdots & \cdots & \vdots & \vdots & \cdots & \cdots & \ddots \\ a & b & \cdots & e & f & \cdots & i & j \end{matrix} \right]$$
 ```
-
-
 
 $$\left[ \begin{matrix} 1 & 2  & \cdots & 5 & 6 & \cdots & 9 & 10 \\ \vdots & \vdots & \cdots & \vdots & \vdots & \cdots & \cdots & \ddots \\ a & b & \cdots & e & f & \cdots & i & j \end{matrix} \right]$$
 
@@ -1126,91 +1112,86 @@ $\stackrel{a}{\longrightarrow}$
 $0\stackrel{a}{\longrightarrow}1$
 ```
 
-
-
 #### 更多箭头符号
 
-latex	显示效果
+latex    显示效果
 
 ```latex
-\uparrow	↑
-\downarrow	↓
-\Uparrow	⇑
-\Downarrow	⇓
-\updownarrow	↕
-\Updownarrow	⇕
-\rightarrow	→
-\leftarrow	←
-\Rightarrow	⇒
-\Leftarrow	⇐
-\leftrightarrow	↔
-\Leftrightarrow	⇔
-\longrightarrow	⟶
-\longleftarrow	⟵
-\Longrightarrow	⟹
-\Longleftarrow	⟸
-\longleftrightarrow	⟷
-\Longleftrightarrow	⟺
+\uparrow    ↑
+\downarrow    ↓
+\Uparrow    ⇑
+\Downarrow    ⇓
+\updownarrow    ↕
+\Updownarrow    ⇕
+\rightarrow    →
+\leftarrow    ←
+\Rightarrow    ⇒
+\Leftarrow    ⇐
+\leftrightarrow    ↔
+\Leftrightarrow    ⇔
+\longrightarrow    ⟶
+\longleftarrow    ⟵
+\Longrightarrow    ⟹
+\Longleftarrow    ⟸
+\longleftrightarrow    ⟷
+\Longleftrightarrow    ⟺
 
-latex	显示效果
-\mapsto	↦
-\longmapsto	⟼
-\hookleftarrow	↩
-\hookrightarrow	↪
-\leftharpoonup	↼
-\rightharpoonup	⇀
-\leftharpoondown	↽
-\rightharpoondown	⇁
-\rightleftharpoons	⇌
-\leadsto	⇝
-\nearrow	↗
-\searrow	↘
-\swarrow	↙
-\nwarrow	↖
-\nleftarrow	↚
-\nrightarrow	↛
-\nLeftarrow	⇍
-\nRightarrow	⇏
-\nleftrightarrow	↮
-\nLeftrightarrow	⇎
-\dashrightarrow	⇢
-\dashleftarrow	⇠
-\leftleftarrows	⇇
-\leftrightarrows	⇆
-\Lleftarrow	⇚
-\twoheadleftarrow	↞
-\leftarrowtail	↢
-\looparrowleft	↫
-\leftrightharpoons	⇋
-\curvearrowleft	↶
-\circlearrowleft	↺
-\Lsh	↰
-\upuparrows	⇈
-\upharpoonleft	↿
-\downharpoonleft	⇃
-\multimap	⊸
-\leftrightsquigarrow	↭
-\rightrightarrows	⇉
-\rightleftarrows	⇄
-\rightrightarrows	⇉
-\rightleftarrows	⇄
-\twoheadrightarrow	↠
-\rightarrowtail	↣
-\looparrowright	↬
-\rightleftharpoons	⇌
-\curvearrowright	↷
-\circlearrowright	↻
-\Rsh	↱
-\downdownarrows	⇊
-\upharpoonright	↾
-\downharpoonright	⇂
-\rightsquigarrow	⇝
+latex    显示效果
+\mapsto    ↦
+\longmapsto    ⟼
+\hookleftarrow    ↩
+\hookrightarrow    ↪
+\leftharpoonup    ↼
+\rightharpoonup    ⇀
+\leftharpoondown    ↽
+\rightharpoondown    ⇁
+\rightleftharpoons    ⇌
+\leadsto    ⇝
+\nearrow    ↗
+\searrow    ↘
+\swarrow    ↙
+\nwarrow    ↖
+\nleftarrow    ↚
+\nrightarrow    ↛
+\nLeftarrow    ⇍
+\nRightarrow    ⇏
+\nleftrightarrow    ↮
+\nLeftrightarrow    ⇎
+\dashrightarrow    ⇢
+\dashleftarrow    ⇠
+\leftleftarrows    ⇇
+\leftrightarrows    ⇆
+\Lleftarrow    ⇚
+\twoheadleftarrow    ↞
+\leftarrowtail    ↢
+\looparrowleft    ↫
+\leftrightharpoons    ⇋
+\curvearrowleft    ↶
+\circlearrowleft    ↺
+\Lsh    ↰
+\upuparrows    ⇈
+\upharpoonleft    ↿
+\downharpoonleft    ⇃
+\multimap    ⊸
+\leftrightsquigarrow    ↭
+\rightrightarrows    ⇉
+\rightleftarrows    ⇄
+\rightrightarrows    ⇉
+\rightleftarrows    ⇄
+\twoheadrightarrow    ↠
+\rightarrowtail    ↣
+\looparrowright    ↬
+\rightleftharpoons    ⇌
+\curvearrowright    ↷
+\circlearrowright    ↻
+\Rsh    ↱
+\downdownarrows    ⇊
+\upharpoonright    ↾
+\downharpoonright    ⇂
+\rightsquigarrow    ⇝
 ```
 
-
-
 ------------------------------------------------
-
 
 ### 省略号
 
@@ -1300,38 +1281,37 @@ $\mathring{x}$
 
 ## 希腊字母
 
-| 大写字母 |    效果    |    实现    | 小写字母 |    效果    |    实现    |
-| :------: | :--------: | :--------: | :------: | :--------: | :--------: |
-|    A     |  $\Alpha$  |  `\Alpha`  |    α     |  $\alpha$  |  `\alpha`  |
-|    B     |  $\Beta$   |  `\Beta`   |    β     |  $\beta$   |  `\beta`   |
-|    Γ     |  $\Gamma$  |  `\Gamma`  |    γ     |  $\gamma$  |  `\gamma`  |
-|    Δ     |  $\Delta$  |  `\Delta`  |    δ     |  $\delta$  |  `\delta`  |
-|    Ε     | $\Epsilon$ | `\Epsilon` |    ε     | $\epsilon$ | `\epsilon` |
-|    Ζ     |  $\Zeta$   |  `\Zeta`   |    ζ     |  $\zeta$   |  `\zeta`   |
-|    Η     |   $\Eta$   |   `\Eta`   |    η     |   $\eta$   |   `\eta`   |
-|    Θ     |  $\Theta$  |  `\Theta`  |    θ     |  $\theta$  |  `\theta`  |
-|    Ι     |  $\Iota$   |  `\Iota`   |    ι     |  $\iota$   |  `\iota`   |
-|    Κ     |  $\Kappa$  |  `\Kappa`  |    κ     |  $\kappa$  |  `\kappa`  |
-|    Λ     | $\Lambda$  | `\Lambda`  |    λ     | $\lambda$  | `\lambda`  |
-|    Μ     |   $\Mu$    |   `\Mu`    |    μ     |   $\mu$    |   `\mu`    |
-|    Ν     |   $\Nu$    |   `\Nu`    |    ν     |   $\nu$    |   `\nu`    |
-|    Ξ     |   $\Xi$    |   `\Xi`    |    ξ     |   $\xi$    |   `\xi`    |
-|    Ο     | $\Omicron$ | `\Omicron` |    ο     | $\omicron$ | `\omicron` |
-|    Π     |   $\Pi $   |   `\Pi`    |    π     |   $\pi$    |   `\pi`    |
-|    Ρ     |   $\Rho$   |   `\Rho`   |    ρ     |   $\rho$   |   `\rho`   |
-|    Σ     |  $\Sigma$  |  `\Sigma`  |    σ     |  $\sigma$  |  `\sigma`  |
-|    Τ     |   $\Tau$   |   `\Tau`   |    τ     |   $\tau$   |   `\tau`   |
-|    Υ     | $\Upsilon$ | `\Upsilon` |    υ     | $\upsilon$ | `\upsilon` |
-|    Φ     |   $\Phi$   |   `\Phi`   |    φ     |   $\phi$   |   `\phi`   |
-|    Χ     |   $\Chi$   |   `\Chi`   |    χ     |   $\chi$   |   `\chi`   |
-|    Ψ     |   $\Psi$   |   `\Psi`   |    ψ     |   $\psi$   |   `\psi`   |
-|    Ω     |  $\Omega$  |  `\Omega`  |    ω     |  $\omega$  |  `\omega`  |
+| 大写字母 | 效果         | 实现         | 小写字母 | 效果         | 实现         |
+|:----:|:----------:|:----------:|:----:|:----------:|:----------:|
+| A    | $\Alpha$   | `\Alpha`   | α    | $\alpha$   | `\alpha`   |
+| B    | $\Beta$    | `\Beta`    | β    | $\beta$    | `\beta`    |
+| Γ    | $\Gamma$   | `\Gamma`   | γ    | $\gamma$   | `\gamma`   |
+| Δ    | $\Delta$   | `\Delta`   | δ    | $\delta$   | `\delta`   |
+| Ε    | $\Epsilon$ | `\Epsilon` | ε    | $\epsilon$ | `\epsilon` |
+| Ζ    | $\Zeta$    | `\Zeta`    | ζ    | $\zeta$    | `\zeta`    |
+| Η    | $\Eta$     | `\Eta`     | η    | $\eta$     | `\eta`     |
+| Θ    | $\Theta$   | `\Theta`   | θ    | $\theta$   | `\theta`   |
+| Ι    | $\Iota$    | `\Iota`    | ι    | $\iota$    | `\iota`    |
+| Κ    | $\Kappa$   | `\Kappa`   | κ    | $\kappa$   | `\kappa`   |
+| Λ    | $\Lambda$  | `\Lambda`  | λ    | $\lambda$  | `\lambda`  |
+| Μ    | $\Mu$      | `\Mu`      | μ    | $\mu$      | `\mu`      |
+| Ν    | $\Nu$      | `\Nu`      | ν    | $\nu$      | `\nu`      |
+| Ξ    | $\Xi$      | `\Xi`      | ξ    | $\xi$      | `\xi`      |
+| Ο    | $\Omicron$ | `\Omicron` | ο    | $\omicron$ | `\omicron` |
+| Π    | $\Pi $     | `\Pi`      | π    | $\pi$      | `\pi`      |
+| Ρ    | $\Rho$     | `\Rho`     | ρ    | $\rho$     | `\rho`     |
+| Σ    | $\Sigma$   | `\Sigma`   | σ    | $\sigma$   | `\sigma`   |
+| Τ    | $\Tau$     | `\Tau`     | τ    | $\tau$     | `\tau`     |
+| Υ    | $\Upsilon$ | `\Upsilon` | υ    | $\upsilon$ | `\upsilon` |
+| Φ    | $\Phi$     | `\Phi`     | φ    | $\phi$     | `\phi`     |
+| Χ    | $\Chi$     | `\Chi`     | χ    | $\chi$     | `\chi`     |
+| Ψ    | $\Psi$     | `\Psi`     | ψ    | $\psi$     | `\psi`     |
+| Ω    | $\Omega$   | `\Omega`   | ω    | $\omega$   | `\omega`   |
 
 > - 此文参考自 [@Daniel_Gavin 的文章《Markdown数学公式语法》（ 简书 ）](https://www.jianshu.com/p/e74eb43960a1)
 > - 推荐网站：[Online LaTeX Equation Editor](http://latex.codecogs.com/eqneditor/editor.php)
 
 分类: [Markdown_LaTeX](https://www.cnblogs.com/muyisir/category/1538277.html)
-
 
 $$
 f(x)=\left\{
@@ -1364,11 +1344,10 @@ $$
 $$
 
 $$
-\begin{align*}\label{3}
+\begin {align*}\label{3}
   & X(0) = x(0)W_{N}^{0\cdot0} + x(1)W_{N}^{0\cdot1} + \cdots + x(N-1)W_{N}^{0\cdot(N-1)}\\
   & X(1) = x(0)W_{N}^{1\cdot0} + x(1)W_{N}^{1\cdot1} + \cdots + x(N-1)W_{N}^{1\cdot(N-1)} \\
   & \cdots \\
   & X(N-1) = x(0)W_{N}^{(N-1)\cdot0} + x(1)W_{N}^{(N-1)\cdot1} + \cdots + x(N-1)W_{N}^{(N-1)\cdot(N-1)} \\
 \end{align*}
 $$
-
